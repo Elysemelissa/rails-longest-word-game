@@ -1,0 +1,16 @@
+<div class="container">
+<div class="title">Letter Game</div>
+<div class="game-rules"><p>blablabla</p></div>
+<div class="flex-container">
+    <% @letters.each do |letter| %>
+    <ul class="letters">
+      <li><%= letter.upcase %></li>
+    </ul>
+    <% end %>
+    </div>
+  <br>
+  <br>
+  <h2>What is the longest word you can find?</h2>
+  <%= render "form", letters: @letters %>
+  </div>
+</div>
