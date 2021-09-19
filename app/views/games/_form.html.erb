@@ -1,12 +1,13 @@
-<div class="search input-group justify-content-center">
-    <div class="form-outline">
-      <form action="score" method="POST">
+<div class="search input-group justify-content-center mb-2 p-3">
+  <div class="form-outline">
+    <form action="score" method="POST">
       <input type="text" name="word" class="form-control">
-      </div>
-      <button type="submit" class="btn btn-primary rounded-right">
-      Play
-      </button>
-      <input id="token" name="token" type="hidden" value="20210630104313" />
-      <%= hidden_field_tag :letters, @letters %>
-      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  </div>
+  <button type="submit" class="btn btn-primary rounded-right">
+    Play
+  </button>
+  <input id="token" name="token" type="hidden" value="20210630104313" />
+  <%= hidden_field_tag :letters, @letters %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   </form>
+</div>
