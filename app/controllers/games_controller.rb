@@ -6,7 +6,6 @@ class GamesController < ApplicationController
   end
 
   def score
-    session[:score] = 0
     @word = params[:word].upcase.chars
     @letters = params[:letters].upcase.scan /\w/
     valid(@word)
