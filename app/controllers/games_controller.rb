@@ -21,6 +21,11 @@ class GamesController < ApplicationController
     @letters = @letters.join
   end
 
+  def reset
+    session.delete(:score)
+    redirect_to root_path
+  end
+
   private
   
   # API

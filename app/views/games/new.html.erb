@@ -21,4 +21,5 @@
     <p>What is the longest word you can find?</p>
     <%= render "form", letters: @letters %>
   </div>
+  <%= link_to "reset score", reset_path, class:'reset-score', :data => {:confirm => 'Are you sure you want to reset your score?'} %>
 </div>
