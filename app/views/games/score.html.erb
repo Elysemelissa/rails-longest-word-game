@@ -1,3 +1,4 @@
+<div class="container shadow p-3 mb-5 rounded">
 <h1>Results</h1>
 
 <% if @valid %>
@@ -8,7 +9,8 @@
     <p>Sorry, but <strong><%= @word %></strong> does not seem to be a valid English word...</p>
   <% end %>
 <% else %>
-  <p>Sorry, but <strong><%= @word %></strong> can't be built out of the letters <%= @letters %> :(</p>
+<p>Sorry, but <strong><%= @word %></strong> can't be built out of the letters <%= @letters %> :(</p>
 <% end %>
 
-<h3><%= link_to 'Play again!', root_path %></h3>
+<%= link_to 'Play again!', root_path, class: 'btn btn-primary' %>
+</div>

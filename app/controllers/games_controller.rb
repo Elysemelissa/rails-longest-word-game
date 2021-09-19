@@ -23,6 +23,7 @@ class GamesController < ApplicationController
   end
 
   private
+  
   # API
   def existing_word?(word)
     response = URI.open("https://wagon-dictionary.herokuapp.com/#{word}")
